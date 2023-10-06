@@ -22,11 +22,11 @@
         android:text="Second Activity"
         android:textAllCaps="false" />
 
-<!--    <Button-->
-<!--        android:id="@+id/btn_counter"-->
-<!--        android:layout_width="384dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Counter"-->
-<!--        android:textAllCaps="false" />-->
+    <Button
+        android:id="@+id/btn_counter"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:text="Counter"
+        android:textAllCaps="false" />
 
 </LinearLayout>

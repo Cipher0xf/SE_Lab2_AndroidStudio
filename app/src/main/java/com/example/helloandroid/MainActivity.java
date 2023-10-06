@@ -43,31 +43,31 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        Button btnCounter = (Button) findViewById(R.id.btn_counter);
-//        btnCounter.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                final AlertDialog.Builder normalDialog =
-//                        new AlertDialog.Builder(MainActivity.this);
-//                normalDialog.setTitle("Continue Jump to the Counter Activity");
-//                normalDialog.setPositiveButton("YES",
-//                        new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                Intent intent = new Intent(MainActivity.this, CounterActivity.class);
-//                                startActivity(intent);
-//                            }
-//                        });
-//                normalDialog.setNegativeButton("NO",
-//                        new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                // do nothing
-//                            }
-//                        });
-//                // display the AlertDialog
-//                normalDialog.show();
-//            }
-//        });
+        Button btnCounter = (Button) findViewById(R.id.btn_counter);
+        btnCounter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final AlertDialog.Builder normalDialog =
+                        new AlertDialog.Builder(MainActivity.this);
+                normalDialog.setTitle("Continue Jump to the Counter Activity");
+                normalDialog.setPositiveButton("YES",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent intent = new Intent(MainActivity.this, CounterActivity.class);
+                                startActivity(intent);
+                            }
+                        });
+                normalDialog.setNegativeButton("NO",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                // do nothing
+                            }
+                        });
+                // display the AlertDialog
+                normalDialog.show();
+            }
+        });
     }
 }
